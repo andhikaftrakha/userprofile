@@ -39,7 +39,7 @@ class App extends Component {
       datas[index].fname = fname;
       datas[index].lname = lname;
       datas[index].address = address;
-      datas[index].address = pnumber;
+      datas[index].pnumber = pnumber;
       datas[index].description = description;
     }
 
@@ -70,6 +70,7 @@ class App extends Component {
     this.refs.fname.value = data.fname;
     this.refs.address.value = data.address;
     this.refs.pnumber.value = data.pnumber;
+    this.refs.description.value = data.description;
 
     this.setState({
       act: 1,
